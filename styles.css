@@ -61,6 +61,43 @@ body {
     gap: 1rem;
 }
 
+/* Home Page Hero */
+.hero-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    text-align: center;
+    padding: 3rem 2rem;
+    gap: 2rem;
+}
+
+.studio-icon-large {
+    width: 160px;
+    height: 160px;
+    border-radius: 32px;
+    background-color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.studio-icon-large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 32px;
+}
+
+.hero-home h1 {
+    font-size: clamp(3rem, 10vw, 5.5rem);
+    font-weight: bold;
+    color: #111111;
+}
+
 .studio-icon {
     width: 120px;
     height: 120px;
@@ -571,6 +608,220 @@ body {
     text-decoration: underline;
 }
 
+/* Home Links Section */
+.home-links {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.home-link-card {
+    display: block;
+    padding: 2rem;
+    background-color: #F1F1F1;
+    border-radius: 16px;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.home-link-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.home-link-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 0.5rem;
+}
+
+.home-link-card p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* About Page Styles */
+.about-container {
+    margin-top: 2rem;
+}
+
+.about-section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #F9F9F9;
+    border-radius: 12px;
+}
+
+.about-section h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    color: #333;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.about-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+.about-list li {
+    padding: 0.75rem 0;
+    color: #333;
+    line-height: 1.8;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.about-list li:last-child {
+    border-bottom: none;
+}
+
+.about-list strong {
+    color: #111111;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.about-section a {
+    color: #8B5CF6;
+    text-decoration: none;
+}
+
+.about-section a:hover {
+    text-decoration: underline;
+}
+
+/* Apps Page Styles */
+.apps-page-container {
+    margin-top: 2rem;
+}
+
+.app-card-full {
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.app-icon-large {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    background-color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app-icon-large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.app-content-full {
+    flex: 1;
+}
+
+.app-content-full h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 0.5rem;
+}
+
+.app-description-full {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.app-status-full {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.app-details {
+    margin-top: 2rem;
+}
+
+.app-details h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111111;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.app-details h3:first-child {
+    margin-top: 0;
+}
+
+.app-details p {
+    color: #333;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+
+.app-features {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.app-features li {
+    padding: 0.75rem 0;
+    padding-left: 1.5rem;
+    color: #333;
+    line-height: 1.8;
+    position: relative;
+}
+
+.app-features li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #8B5CF6;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.app-details a {
+    color: #8B5CF6;
+    text-decoration: none;
+}
+
+.app-details a:hover {
+    text-decoration: underline;
+}
+
 /* Footer */
 footer {
     margin-top: auto;
@@ -608,6 +859,21 @@ footer {
         min-height: 30vh;
     }
 
+    .hero-home {
+        min-height: 40vh;
+        padding: 2rem 1rem;
+    }
+
+    .studio-icon-large {
+        width: 140px;
+        height: 140px;
+    }
+
+    .links-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
     .about,
     .support-preview {
         margin: 3rem auto;
@@ -623,6 +889,22 @@ footer {
     }
 
     .support-section {
+        padding: 1.5rem;
+    }
+
+    .app-card-full {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .app-icon-large {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about-section {
         padding: 1.5rem;
     }
 }
@@ -677,6 +959,23 @@ footer {
     .support-btn {
         width: 100%;
         text-align: center;
+    }
+
+    .hero-home h1 {
+        font-size: 2.5rem;
+    }
+
+    .studio-icon-large {
+        width: 120px;
+        height: 120px;
+    }
+
+    .app-card-full {
+        padding: 1rem;
+    }
+
+    .app-content-full h2 {
+        font-size: 1.5rem;
     }
 }
 
