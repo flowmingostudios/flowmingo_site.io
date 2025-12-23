@@ -67,10 +67,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 50vh;
+    min-height: 40vh;
     text-align: center;
-    padding: 3rem 2rem;
-    gap: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
+    gap: 1.5rem;
 }
 
 .studio-icon-large {
@@ -616,20 +616,24 @@ body {
 }
 
 .links-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
 .home-link-card {
     display: block;
-    padding: 2rem;
+    padding: 1.25rem 1.5rem;
     background-color: #F1F1F1;
     border-radius: 16px;
     text-decoration: none;
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 0;
 }
 
 .home-link-card:hover {
@@ -870,8 +874,12 @@ footer {
     }
 
     .links-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .home-link-card {
+        max-width: 100%;
     }
 
     .about,
