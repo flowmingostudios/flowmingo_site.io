@@ -608,6 +608,62 @@ body {
     text-decoration: underline;
 }
 
+/* Legal Page Styles */
+.legal-page .content-container {
+    max-width: 960px;
+}
+
+.legal-card {
+    background-color: #F9F9F9;
+    border-radius: 16px;
+    padding: 2rem;
+}
+
+.legal-section + .legal-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #E0E0E0;
+}
+
+.legal-section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 0.75rem;
+}
+
+.legal-section h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #111111;
+    margin: 1rem 0 0.5rem;
+}
+
+.legal-section p {
+    color: #333;
+    line-height: 1.85;
+    margin-bottom: 0.9rem;
+}
+
+.legal-section a {
+    color: #8B5CF6;
+    text-decoration: none;
+}
+
+.legal-section a:hover {
+    text-decoration: underline;
+}
+
+.legal-list {
+    margin: 0.75rem 0 1rem 1.25rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+.legal-list li {
+    margin-bottom: 0.5rem;
+}
+
 /* Home Links Section */
 .home-links {
     max-width: 1000px;
@@ -915,6 +971,10 @@ footer {
     .about-section {
         padding: 1.5rem;
     }
+
+    .legal-card {
+        padding: 1.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -984,6 +1044,10 @@ footer {
 
     .app-content-full h2 {
         font-size: 1.5rem;
+    }
+
+    .legal-card {
+        padding: 1rem;
     }
 }
 
