@@ -664,6 +664,52 @@ body {
     margin-bottom: 0.5rem;
 }
 
+.disclaimer-card {
+    background-color: #FFF7ED;
+    border: 1px solid #FED7AA;
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.disclaimer-card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.disclaimer-card p {
+    color: #333;
+    line-height: 1.85;
+}
+
+.sources-note {
+    margin-top: 1rem;
+}
+
+.source-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0 0;
+}
+
+.source-list li + li {
+    margin-top: 1rem;
+}
+
+.source-list a {
+    color: #8B5CF6;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.source-list a:hover {
+    text-decoration: underline;
+}
+
+.source-list p {
+    margin: 0.3rem 0 0;
+}
+
 /* Home Links Section */
 .home-links {
     max-width: 1000px;
@@ -891,6 +937,24 @@ footer {
     font-size: 0.9rem;
 }
 
+.footer-links {
+    margin-top: 0.75rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #8B5CF6;
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .main-nav {
@@ -1029,6 +1093,10 @@ footer {
         text-align: center;
     }
 
+    .footer-links {
+        gap: 0.75rem;
+    }
+
     .hero-home h1 {
         font-size: 2.5rem;
     }
@@ -1050,4 +1118,3 @@ footer {
         padding: 1rem;
     }
 }
-
