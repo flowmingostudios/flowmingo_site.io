@@ -756,6 +756,141 @@ body {
 }
 
 /* About Page Styles */
+.about-page .content-container {
+    max-width: 1120px;
+}
+
+.about-intro .page-intro {
+    margin-bottom: 1.25rem;
+}
+
+.about-page .about-section {
+    margin-bottom: 1.5rem;
+}
+
+.about-page .about-contact {
+    background-color: #FFFFFF;
+}
+
+.about-eyebrow {
+    color: #8B5CF6;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about-placeholder {
+    font-style: italic;
+    color: #666;
+}
+
+.about-team > h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.about-team-card {
+    display: flex;
+    flex-direction: column;
+    background: #AD76FF;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.about-team-card-andrew {
+    background: #FFB65F;
+}
+
+.about-team-photo {
+    flex-shrink: 0;
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #FFFFFF;
+}
+
+.about-team-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+}
+
+.about-team-photo-harsh img {
+    object-fit: contain;
+    object-position: center bottom;
+    padding-top: 1.5rem;
+    transform: translateX(7%);
+}
+
+.about-team-photo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(173, 118, 255, 0) 65%, #AD76FF 100%);
+    pointer-events: none;
+}
+
+.about-portrait::after {
+    background: linear-gradient(to bottom, rgba(255, 182, 95, 0) 65%, #FFB65F 100%);
+}
+
+.about-team-copy {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.5rem 2rem 2rem;
+}
+
+.about-team-copy h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-team-copy p {
+    font-size: 1rem;
+}
+
+.about-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+    justify-content: center;
+    margin-top: auto;
+    padding-top: 1.5rem;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.about-team .about-socials a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #111111;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.about-socials svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 760px) {
+    .about-team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .about-container {
     margin-top: 2rem;
 }
@@ -850,6 +985,7 @@ body {
 
 .app-content-full {
     flex: 1;
+    min-width: 0;
 }
 
 .app-content-full h2 {
@@ -926,6 +1062,25 @@ body {
 
 .app-details a:hover {
     text-decoration: underline;
+}
+
+.app-gallery {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.app-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+.app-gallery figcaption {
+    margin-top: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
 }
 
 /* Footer */

@@ -47,6 +47,7 @@
                         <label for="subject">Subject *</label>
                         <select id="subject" name="_subject" required>
                             <option value="General Inquiry - Flowmingo Studios Contact">General Inquiry</option>
+                            <option value="Vintake Onboarding - Flowmingo Studios Contact">Vintake Onboarding</option>
                             <option value="App Support / Bug Report - Flowmingo Studios Contact">App Support / Bug Report</option>
                             <option value="Feature Request - Flowmingo Studios Contact">Feature Request</option>
                             <option value="Feedback - Flowmingo Studios Contact">Feedback</option>
@@ -88,6 +89,11 @@
     </footer>
 
     <script>
+        if (new URLSearchParams(window.location.search).get('subject') === 'vintake-onboarding') {
+            document.getElementById('subject').value = 'Vintake Onboarding - Flowmingo Studios Contact';
+            document.getElementById('message').placeholder = 'Tell us your dealership name, team size, and how you manage private-party acquisitions today...';
+        }
+
         // Handle form submission
         document.querySelector('.contact-form').addEventListener('submit', function(e) {
             const submitBtn = document.querySelector('.submit-btn');
@@ -102,7 +108,7 @@
             setTimeout(function() {
                 formMessage.style.display = 'block';
                 formMessage.className = 'form-message success';
-                formMessage.textContent = 'Thank you! Your message has been sent. We'll get back to you soon.';
+                formMessage.textContent = "Thank you! Your message has been sent. We'll get back to you soon.";
                 submitBtn.textContent = 'Message Sent!';
             }, 1000);
         });
